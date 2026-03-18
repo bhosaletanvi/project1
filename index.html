@@ -1,0 +1,335 @@
+<html>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        :root{
+            font-size: 16px;
+        }
+        .page1{
+            height: 100vh;
+            width: 100vw;
+            /* border: 3px solid red; */
+        }
+        .navbar{
+            display: flex;
+            font-size: 16px;
+            height: 8.5%;
+            /* border: 2px solid red; */
+           
+        }
+        .sub1{
+            flex-grow: 1;
+            border: 1px solid black;
+            padding: 1rem;
+            
+        }
+         .sub2{
+            border: 1px solid black;
+            width: 150px;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+
+        }
+         .sub3{
+            width: 150px;
+            border: 1px solid black;
+            padding: 1rem;
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+        .hero{
+            /* border: 2px solid black; */
+            height: 91.5%;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.395)), url("https://cdn.kimkim.com/files/a/images/ef80bf6d27c3b6eb60a534712d60d3604a757b2d/big-e6f8c61e72a89be6dfc9ed5c7c65a562.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-content{
+            color: white;
+            font-size: 45px;
+        }
+
+        .page2{
+            width: 100vw;
+            height: 100vh;
+            border: 3px solid rgb(255, 0, 162);
+        }
+        .date{
+            height: 1163px;
+            /* border: 2px solid black; */
+        }
+        .frames{
+            height: 100%;
+            /* width: 90%; */
+            /* border: 2px solid rgb(8, 0, 255); */
+        }
+        .about{
+            height: 100%;
+            /* border: 6px solid green; */
+            padding: 5% 3% 0% 3%;
+            box-sizing: border-box;
+        }
+        .text-box{
+            height: 35%;
+            /* border: 2px solid rebeccapurple; */
+            background-color: rgba(180, 178, 178, 0.16);
+            padding: 2%;
+            box-sizing: border-box;
+        }
+        .text-content{
+            margin-top: 1%;
+            font-size: 250%;
+        }
+        .large-link{
+            /* color: rgb(99, 99, 251); */
+            text-decoration: underline;
+            margin-top: 10px;
+            color: blue;
+        }
+        .frame2{
+            height: 58%;
+            /* border: 2px solid rgb(172, 196, 18); */
+            margin-top: 3%;
+            display: flex;
+            gap: 10%;
+            align-items: center;
+            
+        }
+        .block1{
+            /* border: 2px solid blue; */
+            height: 80%;
+            width: 18%;
+            margin-top: 2%
+        }
+        .block2{
+            /* border: 2px solid blue; */
+            height: 60%;
+            width: 14%;
+            margin-top: 3%
+
+        }
+        .block3{
+            /* border: 2px solid blue; */
+            height: 70%;
+            width: 17%;
+        }
+        .block4{
+            /* border: 2px solid blue; */
+            height: 100%;
+            width: 27%;
+            /* margin-left: 20%; */
+        }
+        .img1back{
+            height: 80%;
+            background-color: rgba(48, 2, 2, 0.822);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5%;
+        }
+        .img1{
+            height: 70%;
+            width: 70%;
+            
+        }
+        .img2{
+            height: 75%;
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        .img3{
+            height: 80%;
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        .img4{
+            height: 85%;
+            width: 100%;
+            margin-bottom: 5%;
+        }
+        
+        .text{
+            /* border: 2px solid green; */
+            height: 60%;
+            width: 60%;
+            margin-top: 3%;
+        }
+        .text-inner{
+            height: 87%;
+            margin-top: 3%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            gap:60px;
+            font-size: 200%;
+            /* box-sizing: border-box; */
+        }
+        .about-link{
+            color: rgb(93, 93, 252);
+        }
+        .date{
+            height: 70%;
+            /* border: 9px solid green; */
+            box-sizing: border-box;
+            padding: 4% 2%;
+            background-image: url("img/8a25451ea6d23c92c383f350e836d19ddce73be7\ \(1\).jpg");
+            background-repeat: no-repeat;
+            background-size:  100% 100% ;
+            /* object-fit: contain; */
+            /* 1280px 538px */
+        }
+        .date-text{
+            height: 50%;
+            /* border: 2px solid gainsboro; */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 15%;
+        }
+        .book-now{
+            padding: 1.5%;
+            border-radius: 25px;
+            width: 10%;
+        }
+        .date-inner-text{
+            font-size: 45px;
+        }
+        .book-now:hover{
+            background-color: rgb(245, 223, 173);
+        }
+        .footer{
+            height: 30%;
+            background-color: black;
+            color: white;
+            box-sizing: border-box;
+            padding:  3% 0% 0% 2%;
+            display: flex;
+            flex-direction: column;
+            gap: 10%;
+            /* box-sizing: border-box; */
+        }
+        .footer-content{
+            padding: 2% 2%;
+            /* border: 2px solid rgb(170, 169, 252); */
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .base{
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            gap: 20%;
+            /* margin-top: 2%; */
+        }
+        hr{
+            width: 5%;
+            /* padding: 4% 0%; */
+            
+        }
+        .base-link{
+            color: white;
+        }
+        .page3{
+            margin-top: 400px;
+            width: 100vw;
+            height: 100vh;
+            /* border: 4px solid blue; */
+        }
+    </style>
+    <body>
+        <div class="page1">
+            <div class="navbar">
+            <div class="sub1">
+                <p>shore geusthouse</p>
+            </div>
+            <div class="sub2">
+                <p>Gallery</p>
+
+            </div>
+            <div class="sub2">
+                <p>Information</p>
+
+            </div>
+             <div class="sub3">
+                <p>Book Now</p>
+
+            </div>
+            </div>
+
+            <div class="hero">
+                <p class="hero-content">Where Comfort and Charm Meet the Aegean</p>
+            </div>
+            
+        </div>
+        <div class="page2">   
+            <div class="about">
+                <div class="frames">
+                    <div class="text-box">
+                        <p>Gallery</p>
+                        <div class="text-content">
+                            <p>Exprience shore guesthouse</p>
+                            <p class="large-link">View full gallery</p>
+                        </div>
+                  </div>
+                  <div class="frame2">
+                    <div class="block1">
+                        <div class="img1back">
+                            <img src="https://m.media-amazon.com/images/I/61CLICZD4pL._AC_UF894,1000_QL80_.jpg" alt="" class="img1">
+                        </div>
+                        <p>Sink into the plush comfort of the canopy bed.</p>
+                    </div>
+                    <div class="block2">
+                     <img src="https://wl-img-prd.s3-accelerate.amazonaws.com/f45af1b2-0ea7-4563-8571-dffced5272c2-h.jpeg" alt="" class="img2">  
+                     <p>Unwind in our lounge room</p> 
+                    </div>
+                    <div class="block3">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqVc-pzFOEZFebrlhVMkZsb4jJHq1Kw8HoGw&s" alt="" class="img3">  
+                      <p>Explore the open sea.</p>
+                    </div>
+                    <div class="block4">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAZsCo7MxQscHQx8Q9ATGqU0F-7gvWAZMP9w&s" alt="" class="img4"> 
+                      <p>A haven lies behind the blue door.</p> 
+                    </div>
+                  </div>
+                </div>
+                <div class="text">
+                    <p>about</p>
+                    <div class="text-inner">
+                        <p class="text-inner-content">Tucked into the rugged cliffs of Santorini, the Shore Guesthouse offers a retreat with uninterrupted views of the caldera.</p>
+                        <p><a class="about-link" href="https://www.figma.com/site/aElqgcQg3DWb5rSnSs4TC2/Sophisticated-Vacation-House-Rental--Community-?node-id=4012-1659&t=eq8IUhrRGaVQhOyF-0">Read our story</a> to learn the history behind Shore Guesthouse and the beauty of Santorini.</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="page3">  
+            <div class="date">
+               <div class="date-text">
+                <p>Plan Your Dream Getaway:</p>
+                <p class="date-inner-text">Summer 2025 Dates Available</p>
+                <a href="https://www.figma.com/sites/?fuid=1572606819245038028"><button class="book-now">Book Now</button></a>
+               </div> 
+            </div>
+        
+            <div class="footer">
+
+                <p>shore guesthouse</p>
+                <hr>
+                <div class="base">
+                    <p>© 2025 All Rights Reserved</p>
+                    <a class="base-link" href="">hello@figma.com</a>
+                    <p>(646) 555-4567 </p>
+                </div>
+            </div>
+        </div>
+        </div> 
+    </body>
+</html>
